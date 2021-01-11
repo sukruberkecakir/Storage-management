@@ -10,6 +10,9 @@
  gradlew.bat bootRun
  <br />
  <br />
+ After starting project firstly<br />
+ open applications.property file and change spring.jpa.hibernate.ddl-auto=create<br />
+ "create" to "none"<br />
  open a browser and type http://localhost:8080/ <br />
  It will direct you to the home page <br />
  then register to get ADMIN role to your user via SQL <br />
