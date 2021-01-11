@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+	<title> Home </title>
+</head>
+<body style="background-color:#ff6600;">
+ 	<div align = "center"> 
+        <h1><span style="color: #003300">Welcome to Home Page</span></h1> 
+        <h3><a th:href="usersList">List of Users</a></h3>
+        <h3><a th:href="add_product">Add new Product</a></h3>
+        <h3><a th:href="products">View Products</a></h3>
+        <h3><a th:href="register">Register</a></h3> 
+        <h3><a th:href="login">Login</a></h3> 
+        <form  th:action="@{/logout}" method="post">
+			<input type="submit" value="logout" />
+		</form>
+   </div>
+</body>
+</html>

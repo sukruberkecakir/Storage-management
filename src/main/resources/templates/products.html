@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+<meta charset="ISO-8859-1">
+<title>Inventory Management System</title>
+</head>
+<body style="background-color:#ff6600;">
+<div align="center">	
+	<div sec:authorize="isAuthenticated()">
+		Welcome <b><span sec:authentication="name">Username</span></b>		
+		<i><span sec:authentication="principal.authorities">Roles</span></i>
+	</div>		
+	<form th:action="@{/logout}" method="post">
+		<input type="submit" value="Logout" />
+	</form>
+	&nbsp;
+	<form th:action="@{/}" method="post">
+		<input type="submit" value="Home" />
+	</form>	
+	<h1>Inventory Management</h1>
+	<div sec:authorize="hasAnyAuthority('ADMIN')">
+		<a href="add_product">Create New Product</a>
+	</div>	
+	<br/><br/>
+	<table border="1" cellpadding="10">
+		<thead>
+			<tr>
+				<th>Product ID</th>
+				<th>Name</th>
+				<th>Stock</th>
+				<th>Brand</th>
+				<th>Category</th>
+				<th>Made In</th>
+				<th>Price</th>		
+				<th sec:authorize="hasAnyAuthority('ADMIN')">Actions</th>						
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="product: ${listProducts}">
+				<td th:text="${product.product_id}">Product ID</td>
+				<td th:text="${product.product_name}">Product Name</td>
+				<td th:text="${product.product_stock}">Stock of Product</td>
+				<td th:text="${product.brand}">Brand</td>
+				<td th:text="${product.category}">Category</td>
+				<td th:text="${product.madeIn}">Made in</td>
+				<td th:text="${product.price}">Price</td>				
+				<td sec:authorize="hasAnyAuthority('ADMIN')">
+					<a th:href="@{'/edit/' + ${product.product_id}}">Edit</a>		
+					
+					<a sec:authorize="hasAuthority('ADMIN')" th:href="@{'/delete/' + ${product.product_id}}">Delete</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+</body>
+</html>
