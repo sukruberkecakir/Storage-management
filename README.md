@@ -26,3 +26,6 @@ insert into users_roles(user_id,role_id)<br />
 values(1,2)<br />
 insert into users_roles(user_id,role_id)<br />
 values(1,2)<br />
+
+# Keep in mind that<br />
+TCP/IP protocol needs to be active and TCP Port needs to be 1433
