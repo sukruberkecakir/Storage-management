@@ -36,12 +36,12 @@ Also a login need to be created in order to reach sql server<br />
 that has a name root and password 1234. It can be done in SQL Server Management Studio<br />
 by clicking security then right clicking logins in springbootdb. It needs to be created for SQL server Authentication.<br />
 Also the server needs to e open for SQL Server authentication<br />
-# Screenshots to help
-How to create user.
-![springbootdb 1](https://user-images.githubusercontent.com/77251099/106119509-5a088b80-6166-11eb-9659-d7eab3a7a4f0.png)
-![springbootdb 2](https://user-images.githubusercontent.com/77251099/106119512-5b39b880-6166-11eb-85e0-fe5d772fb642.png)
-![springbootdb 3](https://user-images.githubusercontent.com/77251099/106119511-5aa12200-6166-11eb-9cd9-7f1e08e33c01.png)
-How to open SQL Server Authentication
-![springbootdb 4](https://user-images.githubusercontent.com/77251099/106119915-c97e7b00-6166-11eb-8e10-118a528f0875.png)
+# Screenshots to help<br />
+How to create user.<br />
+![springbootdb 1](https://user-images.githubusercontent.com/77251099/106119509-5a088b80-6166-11eb-9659-d7eab3a7a4f0.png)<br />
+![springbootdb 2](https://user-images.githubusercontent.com/77251099/106119512-5b39b880-6166-11eb-85e0-fe5d772fb642.png)<br />
+![springbootdb 3](https://user-images.githubusercontent.com/77251099/106119511-5aa12200-6166-11eb-9cd9-7f1e08e33c01.png)<br />
+How to open SQL Server Authentication<br />
+![springbootdb 4](https://user-images.githubusercontent.com/77251099/106119915-c97e7b00-6166-11eb-8e10-118a528f0875.png)<br />
 ![springbootdb 5](https://user-images.githubusercontent.com/77251099/106119919-ca171180-6166-11eb-8d83-f0416381cfdf.png)
 
