@@ -34,4 +34,6 @@ values(1,2)<br />
 TCP/IP protocol needs to be active and TCP Port needs to be 1433<br />
 Also a login need to be created in order to reach sql server<br />
 that has a name root and password 1234. It can be done in SQL Server Management Studio<br />
-by right clicking logins in springbootdb. Also the server needs to e open for SQL Server authentication<br />
+by clicking security then right clicking logins in springbootdb. It needs to be created for SQL server Authentication.<br />
+Also the server needs to e open for SQL Server authentication<br />
+# Screenshots to help
